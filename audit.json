@@ -1,0 +1,21 @@
+{
+    "keepSettings": {
+        "type": 2,
+        "amount": 10
+    },
+    "auditFilename": "audit.json",
+    "hashType": "md5",
+    "extension": "",
+    "files": [
+        {
+            "date": 1684235773357,
+            "name": "E:\\demo\\node\\generator\\myapp\\log\\access-20230516.log",
+            "hash": "408546fe9ec6a39decbc0f647cf10f58"
+        },
+        {
+            "date": 1684288640671,
+            "name": "E:\\demo\\node\\generator\\myapp\\log\\access-20230517.log",
+            "hash": "5023bc48559cbcff6bcd6b3384d1f3bc"
+        }
+    ]
+}
