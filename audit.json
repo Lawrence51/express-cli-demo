@@ -9,13 +9,18 @@
     "files": [
         {
             "date": 1684235773357,
-            "name": "E:\\demo\\node\\generator\\myapp\\log\\access-20230516.log",
+            "name": "E:\\demo\\node\\generator\\express-cli-demo\\log\\access-20230516.log",
             "hash": "408546fe9ec6a39decbc0f647cf10f58"
         },
         {
             "date": 1684288640671,
-            "name": "E:\\demo\\node\\generator\\myapp\\log\\access-20230517.log",
+            "name": "E:\\demo\\node\\generator\\express-cli-demo\\log\\access-20230517.log",
             "hash": "5023bc48559cbcff6bcd6b3384d1f3bc"
+        },
+        {
+            "date": 1684290228655,
+            "name": "E:\\demo\\node\\generator\\express-cli-demo\\log\\access-20230517.log",
+            "hash": "180cbf948d16df0728e9ea2831b9fb7c"
         }
     ]
 }
