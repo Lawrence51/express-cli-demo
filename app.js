@@ -32,7 +32,18 @@ app.set('view engine', 'pug');
 
 // app.use(logger('dev'));
 // setup the logger
-app.use(morgan('combined', {stream: accessLogStream}))
+morgan.token('requestParameters', function(req, res){
+  return JSON.stringify(req.query) || '*';
+});
+morgan.token('requestBody', function(req, res){
+  console.log('req.body-------', req.body)
+  return JSON.stringify(req.body) || '*';
+});
+// create custom format，includes the custom token
+morgan.format('custom-api', ':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent" :requestParameters :requestBody')
+app.use(morgan('custom-api', {stream: accessLogStream}));
+// app.use(morgan('combined', {stream: accessLogStream}))
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
